@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+  <meta name="description" content="javascript test">
+  <meta name="author" content="Davit Sargsyan">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="icon" href="icon/javascript.png">
+  <script src="js/test.js"></script>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<main>
+    <div id="registration">
+        <h1>JavaScript1</h1>
+        <h3 id="warning"></h3>
+        <p id="error"></p>
+      <input type="password"  placeholder="Գաղտնաբառ" id="pass" pattern="" onchange="startTest()">
+      <button type="button" name="button" id="button" onclick="startTest()">Մուտք</button>
+    </div>
+
+    <section class="root">
+  		<p id="time"></p>
+  		<p style="font-size: 35px;padding-top: 2px;" id="result"></p>
+
+  		<p style="font-size: 35px;padding-top: 2px;" id="question"></p>
+
+  		<button onclick="check(1)" class="button" id="option1"></button>
+
+  		<button onclick="check(2)" class="button" id="option2"></button>
+
+  		<button onclick="check(3)" class="button" id="option3"></button>
+
+  		<button onclick="check(4)" class="button" id="option4"></button>
+
+
+        <p id="carefully">եղիր ուշադիր</p>
+
+      <button id="start" class="button" onclick="check(0)">Սկսել թեսթը</button>
+          
+        <div class="test" id="test">
+
+        </div>
+  	</section>
+  </main>
+  <script>
+    var curent_url = document.URL; document.write("<a id='end' style='display: none;' href='" + curent_url + "'>Начать сначала</a>");
+  </script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
